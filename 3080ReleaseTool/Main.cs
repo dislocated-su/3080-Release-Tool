@@ -44,6 +44,7 @@ namespace _3080ReleaseTool
             txtQtyUs.Text = usQty.ToString();
 
             lbLogs.Items.Add("[" + library.getCurrentTime() + "] " + "UK Stock: " + ukQty + " " + "US Stock: " + usQty + ".");
+            lbLogs.TopIndex = lbLogs.Items.Count - 1;
         }
 
         private void btnManualUpdate_Click(object sender, EventArgs e)
@@ -97,6 +98,7 @@ namespace _3080ReleaseTool
                 //Out of Stock or Error
                 lbCartLog.Items.Add("[" + library.getCurrentTime() + "]Region:  " + region + " - Out of Stock.");
             }
+            lbCartLog.TopIndex = lbCartLog.Items.Count - 1;
         }
 
         private void cbCartChecker_CheckedChanged(object sender, EventArgs e)

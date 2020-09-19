@@ -81,7 +81,7 @@ namespace _3080ReleaseTool
 
         private void CheckForCartButton(string region)
         {
-            var soundPlayer = new SoundPlayer(@"c:\Windows\Media\Alarm01.wav");
+            var soundPlayer = new SoundPlayer(@"c:\Windows\Media\Alarm09.wav");
             CartAlert cartAlert = new CartAlert();
 
             if (cartAlert.checkForCartButton(region))

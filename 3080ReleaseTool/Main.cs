@@ -212,5 +212,10 @@ namespace _3080ReleaseTool
         {
             saveLogContents();
         }
+
+        private void cartInterval_ValueChanged(object sender, EventArgs e)
+        {
+            tmrCartAlert.Interval = (int)(cartInterval.Value * 1000);
+        }
     }
 }
